@@ -3,7 +3,7 @@
 [![Slack Status](https://img.shields.io/badge/Slack_Channel-DC_Ecology_R-E01563.svg)](https://swcarpentry.slack.com/messages/C9X9EC405)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3264888.svg)](https://doi.org/10.5281/zenodo.3264888)
 
-# Data carpentry: R for data analysis and visualization of Ecological Data
+# Data carpentry: R for data analysis and visualization of tabular data
 
 This is an introduction to R designed for participants with no programming
 experience. It can be taught in 3/4 of a day (approximately 6 hours).
@@ -13,8 +13,6 @@ such as importing CSV files, the structure of data frame objects in R, dealing
 with categorical variables (i.e. factors), basic data manipulation
 (adding/removing rows and columns), and finishing with calculating summary
 statistics and a brief introduction to plotting.
-There is also a lesson on how to use databases from R that is intended to be
-taught after the SQL lesson, and ideally at the end of a Data Carpentry workshop.
 
 ## Prerequisites
 
@@ -32,7 +30,6 @@ for instructions on installing R, RStudio, and the required R packages.
 - [Starting with data](https://datacarpentry.org/R-ecology-lesson/02-starting-with-data.html)
 - [Manipulating, analyzing and exporting data with `tidyverse`](https://datacarpentry.org/R-ecology-lesson/03-dplyr.html)
 - [Data visualization with `ggplot2`](https://datacarpentry.org/R-ecology-lesson/04-visualization-ggplot2.html)
-- [SQL databases and R](https://datacarpentry.org/R-ecology-lesson/05-r-and-databases.html)
 
 ## Code handout
 
