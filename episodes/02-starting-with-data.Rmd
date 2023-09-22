@@ -55,6 +55,9 @@ Each row holds information for a single animal, and the columns represent:
 | taxon           | e.g. Rodent, Reptile, Bird, Rabbit           | 
 | plot\_type       | type of plot                                 | 
 
+When working with your own data, you will have a copy on your machine already. But for the 
+purposes of this workshop we will use R to download a copy of the data before reading it in.
+
 ### Downloading the data
 
 We created the folder that will store the downloaded data (`data_raw`) in the chapter
@@ -85,15 +88,15 @@ The file has now been downloaded to the destination you specified, but R has not
 yet loaded the data from the file into memory. To do this, we can use the
 `read_csv()` function from the **`tidyverse`** package.
 
-Packages in R are basically sets of additional functions that let you do more
+Packages in R are sets of additional functions that let you do more
 stuff. The functions we've been using so far, like `round()`, `sqrt()`, or `c()`
 come built into R. Packages give you access to additional functions beyond base R.
 A similar function to `read_csv()` from the tidyverse package is `read.csv()` from
 base R. We don't have time to cover their differences but notice that the exact
 spelling determines which function is used.
 Before you use a package for the first time you need to install it on your
-machine, and then you should import it in every subsequent R session when you
-need it.
+machine, and then you should load it in every subsequent R session when you
+need it, using the `library()` function.
 
 To install the **`tidyverse`** package, we can type
 `install.packages("tidyverse")` straight into the console. In fact, it's better
@@ -102,7 +105,7 @@ need to re-install packages every time we run the script.
 Then, to load the package type:
 
 ```{r, message=FALSE, purl=FALSE}
-## load the tidyverse packages, incl. dplyr
+## load the tidyverse package
 library(tidyverse)
 ```
 
@@ -440,9 +443,12 @@ them.
 
 Once created, factors can only contain a pre-defined set of values, known as
 *levels*.
-Factors are stored as integers associated with labels and they can be ordered or unordered. While factors look (and often behave) like character vectors, they are actually treated as integer vectors by R. So you need to be very careful when treating them as strings.
+Factors are stored as integers associated with labels and they can be ordered or unordered. 
+While factors look (and often behave) like character vectors, they are actually treated as integer vectors by R. 
+So you need to be very careful when treating them as strings.
 
-When importing a data frame with `read_csv()`, the columns that contain text are not automatically coerced (=converted) into the `factor` data type, but once we have
+When importing a data frame with `read_csv()`, the columns that contain text 
+are not automatically coerced (=converted) into the `factor` data type, but once we have
 loaded the data we can do the conversion using the `factor()` function:
 
 ```{r, purl=FALSE}
