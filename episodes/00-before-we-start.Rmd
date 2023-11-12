@@ -17,7 +17,7 @@ source("setup.R")
 
 ### Learning Objectives
 
-- Be able to explain what R and RStudio are, what they are used for, and how
+- Explain what R and RStudio are, what they are used for, and how
   they relate to each other.
 - Describe the purpose of the RStudio Script, Console, Environment, and
   Plots panes.
@@ -45,7 +45,7 @@ To function correctly, RStudio needs R and therefore both need to be installed o
 ### R does not involve lots of pointing and clicking, and that's a good thing
 
 In R, the results of your analysis rely on a series of written commands, and not
-on remembering a succession of pointing and clicking. That is a good thing!
+on remembering a succession of pointing and clicking.
 If you want to redo your analysis because you collected more data, you can 
 rerun the script and R will process the new dataset exactly the same way as before.
 
@@ -58,12 +58,12 @@ spot mistakes.
 Reproducibility is when someone else, including your future self, can obtain the
 same results from the same dataset by running the same analysis.
 
-R also integrates with other tools to generate manuscripts from your code. If you
+R can also be integrated with other tools to generate manuscripts from your code. If you
 collect more data, or fix a mistake in your dataset, the figures and the
 statistical tests in your manuscript can be updated automatically.
 
-R is widely used in academia and in industries such as pharma and biotech.
-These organisations expect analyses to be reproducible, so knowing R will give you an
+R is widely used in academia and in industries such as pharma and biotech where
+analyses are sometimes expected to be reproducible, so knowing R will give you an
 edge.
 
 ### R is interdisciplinary and extensible
@@ -343,13 +343,7 @@ in your query.
 ### Asking for help
 
 If your Google search is unsuccessful, you may want to ask other R users for
-help. There are different places where you can ask for help. During this
-workshop, don't hesitate to talk to your neighbor, compare your answers, and ask
-for help. You might also be interested in organizing regular meetings following
-the workshop to keep learning from each other. If you have a friend or colleague
-with more experience than you, they might also be able and willing to help you.
-
-Besides that, there are a few places on the internet that provide help:
+help:
 
 - [Stack Overflow](https://stackoverflow.com/questions/tagged/r?tab=Votes):
   Many questions have already been answered, but the challenge is to use the
@@ -357,32 +351,20 @@ Besides that, there are a few places on the internet that provide help:
   answered before and is well crafted, chances are you will get an answer in
   less than 5 min. Remember to follow their guidelines on [how to ask a good
   question](https://stackoverflow.com/help/how-to-ask).
-- The [R-help mailing list](https://stat.ethz.ch/mailman/listinfo/r-help): it
-  is used by a lot of people (including most of the R core team). If your
-  question is valid (read its [Posting
-  Guide](https://www.r-project.org/posting-guide.html)), you are likely to get
-  an answer very fast, but the tone can be pretty dry and it is not always
-  very welcoming to new users.
-- If your question is about a specific package rather than a base R function,
-  see if there is a mailing list for the package. Usually it's included in the
-  DESCRIPTION file of the package that can be accessed using
-  `packageDescription("<package-name>")`.
-- You can also try to contact the package author directly, by emailing them or
-  opening an issue on the code repository (e.g., on GitHub).
-- There are also some topic-specific mailing lists (GIS, phylogenetics,
-  etc...).  The complete list is [on the R mailing lists website](https://www.r-project.org/mail.html).
+- The [R 4 Data Science Slack Community](https://r4ds.io/join):
+  is a fantastic place to get answers to specific questions that you can't find 
+  answers to with Google or Stack Exchange. Make sure you are at least familiar 
+  with the material in [R 4 Data Science](https://r4ds.had.co.nz/) before asking a question here.
 
 The key to receiving help from someone is for them to rapidly grasp your
 problem. Thus, you should be as precise as possible when describing your problem
-and help others to pinpoint where the issue might be. Try to...
+and help others to pinpoint where the issue might be. Try to:
 
 - Use the correct words to describe your problem. Otherwise you might get an
   answer pointing to the misuse of your words rather than answering your
   question.
-
 - Generalize what you are trying to do, so people outside your field can
   understand the question.
-
 - Reduce what does not work to a simple *reproducible example*. For instance,
   instead of using your real data set, create a small generic one. For more
   information on how to write a reproducible example see [this article from
@@ -390,7 +372,6 @@ and help others to pinpoint where the issue might be. Try to...
   package](https://reprex.tidyverse.org/articles/reprex-dos-and-donts.html).
   Learning how to use the [reprex](https://cran.r-project.org/package=reprex)
   package is also very helpful for this.
-
 - Include the output of `sessionInfo()` in your question. It provides
   information about your platform, the versions of R and the packages that you
   are using. As an example, here you can see the versions of R and all the
@@ -408,40 +389,6 @@ sessionInfo()
 ```{r, echo=FALSE, message=FALSE, purl=FALSE}
 detach(package:RSQLite, unload=TRUE)
 ```
-
-## How to learn more after the workshop?
-
-The material we cover during this workshop will give you a taste of how you can
-use R to analyze data for your own research. However, to do advanced operations
-such as cleaning your dataset, using statistical methods, or creating beautiful
-graphics you will need to learn more.
-
-The best way to become proficient and efficient at R, as with any other tool, is
-to use it to address your actual research questions. As a beginner, it can feel
-daunting to have to write a script from scratch, and given that many people make
-their code available online, modifying existing code to suit your purpose might
-get first hands-on experience using R for your own work and help you become
-comfortable eventually creating your own scripts.
-
-```{r kitten-img, results="markup", echo=FALSE, purl=FALSE, out.width="400px", fig.align="center"}
-knitr::include_graphics("fig/kitten-try-things.jpg")
-```
-
-## More resources
-
-#### More about R
-
-- The [Introduction to R](https://cran.r-project.org/doc/manuals/R-intro.pdf)
-  can also be dense for people with little programming experience but it is a
-  good place to understand the underpinnings of the R language.
-- The [R FAQ](https://cran.r-project.org/doc/FAQ/R-FAQ.html) is dense and
-  technical but it is full of useful information.
-- To stay up to date, follow `#rstats` on twitter. Twitter can also be a way
-  to get questions answered and learn about useful R packages and tipps (e.g.,
-  [@RLangTips])
-
-#### How to ask good programming questions?
-
 - The rOpenSci community call "How to ask questions so they get answered",
   ([rOpenSci site](https://ropensci.org/commcalls/2017-03-07/) and [video
   recording](https://vimeo.com/208749032)) includes a presentation of the
@@ -450,4 +397,23 @@ knitr::include_graphics("fig/kitten-try-things.jpg")
   and [this blog post by Jon Skeet](https://codeblog.jonskeet.uk/2010/08/29/writing-the-perfect-question/)
   have comprehensive advice on how to ask programming questions.
 
+## How to learn more after the workshop?
 
+The material we cover during this workshop will give you a taste of how you can
+use R to analyze data for your own research. However, to do advanced operations
+such as cleaning your dataset, using statistical methods, or creating advanced
+graphics you will need to learn more.
+
+A useful next step is [R 4 Data Science](https://r4ds.had.co.nz/), a free online book which starts
+in a similar way to this workshop, but which contains more intermediate and some advanced concepts too. There
+are lots of exercises to work through to really cement your understanding, so we recommend progressing through
+this as far as you can.
+
+The best way to become proficient and efficient at R, as with any other tool, is
+to use it to address your actual research questions. As a beginner, it can feel
+daunting to have to write a script from scratch. But given that many people make their 
+code available online, it can be useful to see how other's structure their code.
+
+```{r kitten-img, results="markup", echo=FALSE, purl=FALSE, out.width="400px", fig.align="center"}
+knitr::include_graphics("fig/kitten-try-things.jpg")
+```
