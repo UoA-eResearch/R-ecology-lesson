@@ -291,7 +291,7 @@
         
 <section id="aio-00-before-we-start"><p>Content from <a href="00-before-we-start.html">Before we start</a></p>
 <hr>
-<p> Last updated on 2023-09-22 | 
+<p> Last updated on 2023-11-12 | 
         
         <a href="https://github.com/datacarpentry/R-ecology-lesson/edit/main/episodes/00-before-we-start.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -317,9 +317,9 @@ thing<a class="anchor" aria-label="anchor" href="#r-does-not-involve-lots-of-poi
 </h3>
 <p>In R, the results of your analysis rely on a series of written
 commands, and not on remembering a succession of pointing and clicking.
-That is a good thing! If you want to redo your analysis because you
-collected more data, you can rerun the script and R will process the new
-dataset exactly the same way as before.</p>
+If you want to redo your analysis because you collected more data, you
+can rerun the script and R will process the new dataset exactly the same
+way as before.</p>
 <p>Working with scripts makes the steps you used in your analysis clear,
 and the code you write can be inspected by someone else who can give you
 feedback and spot mistakes.</p>
@@ -330,12 +330,12 @@ feedback and spot mistakes.</p>
 <p>Reproducibility is when someone else, including your future self, can
 obtain the same results from the same dataset by running the same
 analysis.</p>
-<p>R also integrates with other tools to generate manuscripts from your
-code. If you collect more data, or fix a mistake in your dataset, the
-figures and the statistical tests in your manuscript can be updated
-automatically.</p>
+<p>R can also be integrated with other tools to generate manuscripts
+from your code. If you collect more data, or fix a mistake in your
+dataset, the figures and the statistical tests in your manuscript can be
+updated automatically.</p>
 <p>R is widely used in academia and in industries such as pharma and
-biotech. These organisations expect analyses to be reproducible, so
+biotech where analyses are sometimes expected to be reproducible, so
 knowing R will give you an edge.</p>
 </div>
 <div class="section level3">
@@ -647,14 +647,7 @@ or package you’re using in your query.</p>
 <h3 id="asking-for-help">Asking for help<a class="anchor" aria-label="anchor" href="#asking-for-help"></a>
 </h3>
 <p>If your Google search is unsuccessful, you may want to ask other R
-users for help. There are different places where you can ask for help.
-During this workshop, don’t hesitate to talk to your neighbor, compare
-your answers, and ask for help. You might also be interested in
-organizing regular meetings following the workshop to keep learning from
-each other. If you have a friend or colleague with more experience than
-you, they might also be able and willing to help you.</p>
-<p>Besides that, there are a few places on the internet that provide
-help:</p>
+users for help:</p>
 <ul>
 <li>
 <a href="https://stackoverflow.com/questions/tagged/r?tab=Votes" class="external-link">Stack
@@ -664,42 +657,33 @@ question hasn’t been answered before and is well crafted, chances are
 you will get an answer in less than 5 min. Remember to follow their
 guidelines on <a href="https://stackoverflow.com/help/how-to-ask" class="external-link">how to
 ask a good question</a>.</li>
-<li>The <a href="https://stat.ethz.ch/mailman/listinfo/r-help" class="external-link">R-help
-mailing list</a>: it is used by a lot of people (including most of the R
-core team). If your question is valid (read its <a href="https://www.r-project.org/posting-guide.html" class="external-link">Posting Guide</a>),
-you are likely to get an answer very fast, but the tone can be pretty
-dry and it is not always very welcoming to new users.</li>
-<li>If your question is about a specific package rather than a base R
-function, see if there is a mailing list for the package. Usually it’s
-included in the DESCRIPTION file of the package that can be accessed
-using <code>packageDescription("&lt;package-name&gt;")</code>.</li>
-<li>You can also try to contact the package author directly, by emailing
-them or opening an issue on the code repository (e.g., on GitHub).</li>
-<li>There are also some topic-specific mailing lists (GIS,
-phylogenetics, etc…). The complete list is <a href="https://www.r-project.org/mail.html" class="external-link">on the R mailing lists
-website</a>.</li>
+<li>The <a href="https://r4ds.io/join" class="external-link">R 4 Data Science Slack
+Community</a>: is a fantastic place to get answers to specific questions
+that you can’t find answers to with Google or Stack Exchange. Make sure
+you are at least familiar with the material in <a href="https://r4ds.had.co.nz/" class="external-link">R 4 Data Science</a> before asking a
+question here.</li>
 </ul>
 <p>The key to receiving help from someone is for them to rapidly grasp
 your problem. Thus, you should be as precise as possible when describing
 your problem and help others to pinpoint where the issue might be. Try
-to…</p>
+to:</p>
 <ul>
-<li><p>Use the correct words to describe your problem. Otherwise you
-might get an answer pointing to the misuse of your words rather than
-answering your question.</p></li>
-<li><p>Generalize what you are trying to do, so people outside your
-field can understand the question.</p></li>
-<li><p>Reduce what does not work to a simple <em>reproducible
-example</em>. For instance, instead of using your real data set, create
-a small generic one. For more information on how to write a reproducible
-example see <a href="https://reprex.tidyverse.org/articles/reprex-dos-and-donts.html" class="external-link">this
+<li>Use the correct words to describe your problem. Otherwise you might
+get an answer pointing to the misuse of your words rather than answering
+your question.</li>
+<li>Generalize what you are trying to do, so people outside your field
+can understand the question.</li>
+<li>Reduce what does not work to a simple <em>reproducible example</em>.
+For instance, instead of using your real data set, create a small
+generic one. For more information on how to write a reproducible example
+see <a href="https://reprex.tidyverse.org/articles/reprex-dos-and-donts.html" class="external-link">this
 article from the reprex package</a>. Learning how to use the <a href="https://cran.r-project.org/package=reprex" class="external-link">reprex</a> package is
-also very helpful for this.</p></li>
-<li><p>Include the output of <code>sessionInfo()</code> in your
-question. It provides information about your platform, the versions of R
-and the packages that you are using. As an example, here you can see the
+also very helpful for this.</li>
+<li>Include the output of <code>sessionInfo()</code> in your question.
+It provides information about your platform, the versions of R and the
+packages that you are using. As an example, here you can see the
 versions of R and all the packages that we are using to run the code in
-this lesson:</p></li>
+this lesson:</li>
 </ul>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -747,43 +731,6 @@ this lesson:</p></li>
 <span><span class="co">#&gt; [33] glue_1.6.2       fansi_1.0.4      colorspace_2.1-0 tools_4.3.1     </span></span>
 <span><span class="co">#&gt; [37] pkgconfig_2.0.3</span></span></code></pre>
 </div>
-</div>
-</section><section id="how-to-learn-more-after-the-workshop"><h2 class="section-heading">How to learn more after the workshop?<a class="anchor" aria-label="anchor" href="#how-to-learn-more-after-the-workshop"></a>
-</h2>
-<hr class="half-width">
-<p>The material we cover during this workshop will give you a taste of
-how you can use R to analyze data for your own research. However, to do
-advanced operations such as cleaning your dataset, using statistical
-methods, or creating beautiful graphics you will need to learn more.</p>
-<p>The best way to become proficient and efficient at R, as with any
-other tool, is to use it to address your actual research questions. As a
-beginner, it can feel daunting to have to write a script from scratch,
-and given that many people make their code available online, modifying
-existing code to suit your purpose might get first hands-on experience
-using R for your own work and help you become comfortable eventually
-creating your own scripts.</p>
-<figure><img src="../fig/kitten-try-things.jpg" width="400px" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure></section><section id="more-resources"><h2 class="section-heading">More resources<a class="anchor" aria-label="anchor" href="#more-resources"></a>
-</h2>
-<hr class="half-width">
-<div class="section level4">
-<h4 id="more-about-r">More about R<a class="anchor" aria-label="anchor" href="#more-about-r"></a>
-</h4>
-<ul>
-<li>The <a href="https://cran.r-project.org/doc/manuals/R-intro.pdf" class="external-link">Introduction
-to R</a> can also be dense for people with little programming experience
-but it is a good place to understand the underpinnings of the R
-language.</li>
-<li>The <a href="https://cran.r-project.org/doc/FAQ/R-FAQ.html" class="external-link">R
-FAQ</a> is dense and technical but it is full of useful
-information.</li>
-<li>To stay up to date, follow <code>#rstats</code> on twitter. Twitter
-can also be a way to get questions answered and learn about useful R
-packages and tipps (e.g., <span class="citation">[@RLangTips]</span>)</li>
-</ul>
-</div>
-<div class="section level4">
-<h4 id="how-to-ask-good-programming-questions">How to ask good programming questions?<a class="anchor" aria-label="anchor" href="#how-to-ask-good-programming-questions"></a>
-</h4>
 <ul>
 <li>The rOpenSci community call “How to ask questions so they get
 answered”, (<a href="https://ropensci.org/commcalls/2017-03-07/" class="external-link">rOpenSci site</a> and
@@ -796,7 +743,25 @@ blog post by Jon Skeet</a> have comprehensive advice on how to ask
 programming questions.</li>
 </ul>
 </div>
-</section></section><section id="aio-01-intro-to-r"><p>Content from <a href="01-intro-to-r.html">Introduction to R</a></p>
+</section><section id="how-to-learn-more-after-the-workshop"><h2 class="section-heading">How to learn more after the workshop?<a class="anchor" aria-label="anchor" href="#how-to-learn-more-after-the-workshop"></a>
+</h2>
+<hr class="half-width">
+<p>The material we cover during this workshop will give you a taste of
+how you can use R to analyze data for your own research. However, to do
+advanced operations such as cleaning your dataset, using statistical
+methods, or creating advanced graphics you will need to learn more.</p>
+<p>A useful next step is <a href="https://r4ds.had.co.nz/" class="external-link">R 4 Data
+Science</a>, a free online book which starts in a similar way to this
+workshop, but which contains more intermediate and some advanced
+concepts too. There are lots of exercises to work through to really
+cement your understanding, so we recommend progressing through this as
+far as you can.</p>
+<p>The best way to become proficient and efficient at R, as with any
+other tool, is to use it to address your actual research questions. As a
+beginner, it can feel daunting to have to write a script from scratch.
+But given that many people make their code available online, it can be
+useful to see how other’s structure their code.</p>
+<figure><img src="../fig/kitten-try-things.jpg" width="400px" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure></section></section><section id="aio-01-intro-to-r"><p>Content from <a href="01-intro-to-r.html">Introduction to R</a></p>
 <hr>
 <p> Last updated on 2023-09-22 | 
         
@@ -1226,7 +1191,7 @@ types in a single vector?</li>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>R implicitly converts them to all be the same type</p>
 </div>
@@ -1267,7 +1232,7 @@ types in a single vector?</li>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>Vectors can be of only one data type. R tries to convert (coerce) the
 content of this vector to find a “common denominator” that doesn’t lose
@@ -1307,7 +1272,7 @@ the 2 <code>..._logical</code>s from above):</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>Only one. There is no memory of past data types, and the coercion
 happens the first time the vector is evaluated. Therefore, the
@@ -1344,7 +1309,7 @@ represents the hierarchy of how these data types are coerced?</li>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <p>logical → numeric → character ← logical</p>
 </div>
@@ -1550,7 +1515,7 @@ vector are found:</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
 <div class="accordion-body">
 <p>When using “&gt;” or “&lt;” on strings, R compares their alphabetical
 order. Here “four” comes after “five”, and therefore is “greater than”
@@ -1636,7 +1601,7 @@ inches.</p></li>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution6" class="accordion-collapse collapse" data-bs-parent="#accordionSolution6" aria-labelledby="headingSolution6">
+<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb56">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -3034,7 +2999,7 @@ collected before 1995 and retain only the columns <code>year</code>,
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb12">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -3128,7 +3093,7 @@ to produce this data frame!</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb17">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -3387,7 +3352,7 @@ surveyed?</li>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb36">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -3424,7 +3389,7 @@ mean, min, and max hindfoot length for each species (using
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb37">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -3467,7 +3432,7 @@ and <code>weight</code>.</li>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb38">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -3674,7 +3639,7 @@ genera within a particular chunk of data. It’s a powerful function! See
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution6" class="accordion-collapse collapse" data-bs-parent="#accordionSolution6" aria-labelledby="headingSolution6">
+<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb46">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -3724,7 +3689,7 @@ combination.</li>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution7" class="accordion-collapse collapse" data-bs-parent="#accordionSolution7" aria-labelledby="headingSolution7">
+<div id="collapseSolution7" class="accordion-collapse collapse" aria-labelledby="headingSolution7" data-bs-parent="#accordionSolution7">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb49">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -3768,7 +3733,7 @@ will be part of the reshape.</li>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution8" class="accordion-collapse collapse" data-bs-parent="#accordionSolution8" aria-labelledby="headingSolution8">
+<div id="collapseSolution8" class="accordion-collapse collapse" aria-labelledby="headingSolution8" data-bs-parent="#accordionSolution8">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb50">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -3796,7 +3761,7 @@ and values columns for <code>pivot_wider()</code>.</li>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution9" class="accordion-collapse collapse" data-bs-parent="#accordionSolution9" aria-labelledby="headingSolution9">
+<div id="collapseSolution9" class="accordion-collapse collapse" aria-labelledby="headingSolution9" data-bs-parent="#accordionSolution9">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb51">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -4761,9 +4726,9 @@ determine the font size in the saved plot.</p>
         <p>Materials licensed under <a href="../LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.14.0" class="external-link">sandpaper (0.14.0)</a>,
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.14.1" class="external-link">sandpaper (0.14.1)</a>,
         <a href="https://github.com/carpentries/pegboard/tree/0.7.1" class="external-link">pegboard (0.7.1)</a>,
-      and <a href="https://github.com/carpentries/varnish/tree/0.3.1" class="external-link">varnish (0.3.1)</a>.</p>
+      and <a href="https://github.com/carpentries/varnish/tree/0.3.3" class="external-link">varnish (0.3.3)</a>.</p>
 			</div>
 		</footer>
 </div> <!-- / div.container -->
@@ -4785,8 +4750,8 @@ determine the font size in the saved plot.</p>
   "url": "https://datacarpentry.github.io/R-ecology-lesson/instructor/aio.html",
   "identifier": "https://datacarpentry.github.io/R-ecology-lesson/instructor/aio.html",
   "dateCreated": "2015-04-02",
-  "dateModified": "2023-11-07",
-  "datePublished": "2023-11-07"
+  "dateModified": "2023-11-12",
+  "datePublished": "2023-11-12"
 }
 
   </script><script>

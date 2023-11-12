@@ -155,7 +155,6 @@
 <li><a href="#interacting-with-r">Interacting with R</a></li>
 <li><a href="#seeking-help">Seeking help</a></li>
 <li><a href="#how-to-learn-more-after-the-workshop">How to learn more after the workshop?</a></li>
-<li><a href="#more-resources">More resources</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
         
@@ -262,7 +261,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Before we start</h1>
-        <p> Last updated on 2023-09-22 | 
+        <p> Last updated on 2023-11-12 | 
         
         <a href="https://github.com/datacarpentry/R-ecology-lesson/edit/main/episodes/00-before-we-start.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -291,9 +290,9 @@ needs R and therefore both need to be installed on your computer.</p>
 thing<a class="anchor" aria-label="anchor" href="#r-does-not-involve-lots-of-pointing-and-clicking-and-thats-a-good-thing"></a></h3>
 <p>In R, the results of your analysis rely on a series of written
 commands, and not on remembering a succession of pointing and clicking.
-That is a good thing! If you want to redo your analysis because you
-collected more data, you can rerun the script and R will process the new
-dataset exactly the same way as before.</p>
+If you want to redo your analysis because you collected more data, you
+can rerun the script and R will process the new dataset exactly the same
+way as before.</p>
 <p>Working with scripts makes the steps you used in your analysis clear,
 and the code you write can be inspected by someone else who can give you
 feedback and spot mistakes.</p>
@@ -303,12 +302,12 @@ feedback and spot mistakes.</p>
 <p>Reproducibility is when someone else, including your future self, can
 obtain the same results from the same dataset by running the same
 analysis.</p>
-<p>R also integrates with other tools to generate manuscripts from your
-code. If you collect more data, or fix a mistake in your dataset, the
-figures and the statistical tests in your manuscript can be updated
-automatically.</p>
+<p>R can also be integrated with other tools to generate manuscripts
+from your code. If you collect more data, or fix a mistake in your
+dataset, the figures and the statistical tests in your manuscript can be
+updated automatically.</p>
 <p>R is widely used in academia and in industries such as pharma and
-biotech. These organisations expect analyses to be reproducible, so
+biotech where analyses are sometimes expected to be reproducible, so
 knowing R will give you an edge.</p>
 </div>
 <div class="section level3">
@@ -594,14 +593,7 @@ or package you’re using in your query.</p>
 <div class="section level3">
 <h3 id="asking-for-help">Asking for help<a class="anchor" aria-label="anchor" href="#asking-for-help"></a></h3>
 <p>If your Google search is unsuccessful, you may want to ask other R
-users for help. There are different places where you can ask for help.
-During this workshop, don’t hesitate to talk to your neighbor, compare
-your answers, and ask for help. You might also be interested in
-organizing regular meetings following the workshop to keep learning from
-each other. If you have a friend or colleague with more experience than
-you, they might also be able and willing to help you.</p>
-<p>Besides that, there are a few places on the internet that provide
-help:</p>
+users for help:</p>
 <ul><li>
 <a href="https://stackoverflow.com/questions/tagged/r?tab=Votes" class="external-link">Stack
 Overflow</a>: Many questions have already been answered, but the
@@ -610,40 +602,31 @@ question hasn’t been answered before and is well crafted, chances are
 you will get an answer in less than 5 min. Remember to follow their
 guidelines on <a href="https://stackoverflow.com/help/how-to-ask" class="external-link">how to
 ask a good question</a>.</li>
-<li>The <a href="https://stat.ethz.ch/mailman/listinfo/r-help" class="external-link">R-help
-mailing list</a>: it is used by a lot of people (including most of the R
-core team). If your question is valid (read its <a href="https://www.r-project.org/posting-guide.html" class="external-link">Posting Guide</a>),
-you are likely to get an answer very fast, but the tone can be pretty
-dry and it is not always very welcoming to new users.</li>
-<li>If your question is about a specific package rather than a base R
-function, see if there is a mailing list for the package. Usually it’s
-included in the DESCRIPTION file of the package that can be accessed
-using <code>packageDescription("&lt;package-name&gt;")</code>.</li>
-<li>You can also try to contact the package author directly, by emailing
-them or opening an issue on the code repository (e.g., on GitHub).</li>
-<li>There are also some topic-specific mailing lists (GIS,
-phylogenetics, etc…). The complete list is <a href="https://www.r-project.org/mail.html" class="external-link">on the R mailing lists
-website</a>.</li>
+<li>The <a href="https://r4ds.io/join" class="external-link">R 4 Data Science Slack
+Community</a>: is a fantastic place to get answers to specific questions
+that you can’t find answers to with Google or Stack Exchange. Make sure
+you are at least familiar with the material in <a href="https://r4ds.had.co.nz/" class="external-link">R 4 Data Science</a> before asking a
+question here.</li>
 </ul><p>The key to receiving help from someone is for them to rapidly grasp
 your problem. Thus, you should be as precise as possible when describing
 your problem and help others to pinpoint where the issue might be. Try
-to…</p>
-<ul><li><p>Use the correct words to describe your problem. Otherwise you
-might get an answer pointing to the misuse of your words rather than
-answering your question.</p></li>
-<li><p>Generalize what you are trying to do, so people outside your
-field can understand the question.</p></li>
-<li><p>Reduce what does not work to a simple <em>reproducible
-example</em>. For instance, instead of using your real data set, create
-a small generic one. For more information on how to write a reproducible
-example see <a href="https://reprex.tidyverse.org/articles/reprex-dos-and-donts.html" class="external-link">this
+to:</p>
+<ul><li>Use the correct words to describe your problem. Otherwise you might
+get an answer pointing to the misuse of your words rather than answering
+your question.</li>
+<li>Generalize what you are trying to do, so people outside your field
+can understand the question.</li>
+<li>Reduce what does not work to a simple <em>reproducible example</em>.
+For instance, instead of using your real data set, create a small
+generic one. For more information on how to write a reproducible example
+see <a href="https://reprex.tidyverse.org/articles/reprex-dos-and-donts.html" class="external-link">this
 article from the reprex package</a>. Learning how to use the <a href="https://cran.r-project.org/package=reprex" class="external-link">reprex</a> package is
-also very helpful for this.</p></li>
-<li><p>Include the output of <code>sessionInfo()</code> in your
-question. It provides information about your platform, the versions of R
-and the packages that you are using. As an example, here you can see the
+also very helpful for this.</li>
+<li>Include the output of <code>sessionInfo()</code> in your question.
+It provides information about your platform, the versions of R and the
+packages that you are using. As an example, here you can see the
 versions of R and all the packages that we are using to run the code in
-this lesson:</p></li>
+this lesson:</li>
 </ul><div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -690,37 +673,6 @@ this lesson:</p></li>
 <span><span class="co">#&gt; [33] glue_1.6.2       fansi_1.0.4      colorspace_2.1-0 tools_4.3.1     </span></span>
 <span><span class="co">#&gt; [37] pkgconfig_2.0.3</span></span></code></pre>
 </div>
-</div>
-</section><section id="how-to-learn-more-after-the-workshop"><h2 class="section-heading">How to learn more after the workshop?<a class="anchor" aria-label="anchor" href="#how-to-learn-more-after-the-workshop"></a>
-</h2>
-<hr class="half-width"><p>The material we cover during this workshop will give you a taste of
-how you can use R to analyze data for your own research. However, to do
-advanced operations such as cleaning your dataset, using statistical
-methods, or creating beautiful graphics you will need to learn more.</p>
-<p>The best way to become proficient and efficient at R, as with any
-other tool, is to use it to address your actual research questions. As a
-beginner, it can feel daunting to have to write a script from scratch,
-and given that many people make their code available online, modifying
-existing code to suit your purpose might get first hands-on experience
-using R for your own work and help you become comfortable eventually
-creating your own scripts.</p>
-<figure><img src="../fig/kitten-try-things.jpg" width="400px" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure></section><section id="more-resources"><h2 class="section-heading">More resources<a class="anchor" aria-label="anchor" href="#more-resources"></a>
-</h2>
-<hr class="half-width"><div class="section level4">
-<h4 id="more-about-r">More about R<a class="anchor" aria-label="anchor" href="#more-about-r"></a></h4>
-<ul><li>The <a href="https://cran.r-project.org/doc/manuals/R-intro.pdf" class="external-link">Introduction
-to R</a> can also be dense for people with little programming experience
-but it is a good place to understand the underpinnings of the R
-language.</li>
-<li>The <a href="https://cran.r-project.org/doc/FAQ/R-FAQ.html" class="external-link">R
-FAQ</a> is dense and technical but it is full of useful
-information.</li>
-<li>To stay up to date, follow <code>#rstats</code> on twitter. Twitter
-can also be a way to get questions answered and learn about useful R
-packages and tipps (e.g., <span class="citation">[@RLangTips]</span>)</li>
-</ul></div>
-<div class="section level4">
-<h4 id="how-to-ask-good-programming-questions">How to ask good programming questions?<a class="anchor" aria-label="anchor" href="#how-to-ask-good-programming-questions"></a></h4>
 <ul><li>The rOpenSci community call “How to ask questions so they get
 answered”, (<a href="https://ropensci.org/commcalls/2017-03-07/" class="external-link">rOpenSci site</a> and
 <a href="https://vimeo.com/208749032" class="external-link">video recording</a>) includes a
@@ -731,7 +683,24 @@ and <a href="https://codeblog.jonskeet.uk/2010/08/29/writing-the-perfect-questio
 blog post by Jon Skeet</a> have comprehensive advice on how to ask
 programming questions.</li>
 </ul></div>
-</section></div> <!-- / div.lesson-content -->
+</section><section id="how-to-learn-more-after-the-workshop"><h2 class="section-heading">How to learn more after the workshop?<a class="anchor" aria-label="anchor" href="#how-to-learn-more-after-the-workshop"></a>
+</h2>
+<hr class="half-width"><p>The material we cover during this workshop will give you a taste of
+how you can use R to analyze data for your own research. However, to do
+advanced operations such as cleaning your dataset, using statistical
+methods, or creating advanced graphics you will need to learn more.</p>
+<p>A useful next step is <a href="https://r4ds.had.co.nz/" class="external-link">R 4 Data
+Science</a>, a free online book which starts in a similar way to this
+workshop, but which contains more intermediate and some advanced
+concepts too. There are lots of exercises to work through to really
+cement your understanding, so we recommend progressing through this as
+far as you can.</p>
+<p>The best way to become proficient and efficient at R, as with any
+other tool, is to use it to address your actual research questions. As a
+beginner, it can feel daunting to have to write a script from scratch.
+But given that many people make their code available online, it can be
+useful to see how other’s structure their code.</p>
+<figure><img src="../fig/kitten-try-things.jpg" width="400px" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure></section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="../instructor/index.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
         <a class="chapter-link float-end" href="../instructor/01-intro-to-r.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
@@ -767,9 +736,9 @@ programming questions.</li>
         <p>Materials licensed under <a href="../LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.14.0" class="external-link">sandpaper (0.14.0)</a>,
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.14.1" class="external-link">sandpaper (0.14.1)</a>,
         <a href="https://github.com/carpentries/pegboard/tree/0.7.1" class="external-link">pegboard (0.7.1)</a>,
-      and <a href="https://github.com/carpentries/varnish/tree/0.3.1" class="external-link">varnish (0.3.1)</a>.</p>
+      and <a href="https://github.com/carpentries/varnish/tree/0.3.3" class="external-link">varnish (0.3.3)</a>.</p>
 			</div>
 		</footer></div> <!-- / div.container -->
 	<div id="to-top">
@@ -790,8 +759,8 @@ programming questions.</li>
   "url": "https://datacarpentry.github.io/R-ecology-lesson/instructor/00-before-we-start.html",
   "identifier": "https://datacarpentry.github.io/R-ecology-lesson/instructor/00-before-we-start.html",
   "dateCreated": "2015-04-02",
-  "dateModified": "2023-09-22",
-  "datePublished": "2023-11-07"
+  "dateModified": "2023-11-12",
+  "datePublished": "2023-11-12"
 }
 
   </script><script>
