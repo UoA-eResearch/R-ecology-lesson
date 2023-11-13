@@ -30,26 +30,26 @@ minutes: 20
 ## Loading the survey data
 
 
-
-We are investigating the animal species diversity and weights found within plots
-at our study site. The dataset is stored as a comma separated value (CSV) file.
+For the purposes of this lesson we will be looking at an ecological data set
+generated from investigating animal species diversity and weights found within plots
+at a study site. The dataset is stored as a comma separated value (CSV) file.
 Each row holds information for a single animal, and the columns represent:
 
 | Column          | Description                                  | 
 | --------------- | -------------------------------------------- |
-| record\_id       | Unique id for the observation                | 
+| record\_id      | Unique id for the observation                | 
 | month           | month of observation                         | 
 | day             | day of observation                           | 
 | year            | year of observation                          | 
-| plot\_id         | ID of a particular experimental plot of land | 
-| species\_id      | 2-letter code                                | 
+| plot\_id        | ID of a particular experimental plot of land | 
+| species\_id     | 2-letter code                                | 
 | sex             | sex of animal ("M", "F")                     | 
-| hindfoot\_length | length of the hindfoot in mm                 | 
+| hindfoot\_length| length of the hindfoot in mm                 | 
 | weight          | weight of the animal in grams                | 
 | genus           | genus of animal                              | 
 | species         | species of animal                            | 
 | taxon           | e.g. Rodent, Reptile, Bird, Rabbit           | 
-| plot\_type       | type of plot                                 | 
+| plot\_type      | type of plot                                 | 
 
 When working with your own data, you will have a copy on your machine already. But for the 
 purposes of this workshop we will use R to download a copy of the data before reading it in.
